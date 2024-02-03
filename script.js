@@ -13,10 +13,8 @@ const zombiesKilled = document.querySelector(".zombiesKilled");
 const retry = document.querySelector(".retry");
 const win = document.querySelector(".win");
 const lose = document.querySelector(".game-over");
-const startButton = document.querySelector(".startButton");
-const title = document.querySelector(".title");
-const hint = document.querySelector(".hint");
-const info = document.querySelector(".info");
+const startWrapper = document.querySelector(".start");
+const startButton = document.querySelector(".start-button");
 
 let press = true;
 let lifes = 2;
@@ -135,6 +133,7 @@ const createZombie = () => {
               ninja.style.visibility = "hidden";
               zombiesKilled.style.visibility = "hidden";
               retry.style.visibility = "visible";
+              counter.style.visibility = "hidden";
             }
           }
         }, 500);
@@ -258,14 +257,10 @@ retry.addEventListener("click", () => {
 
 startButton.addEventListener("click", () => {
   startButton.style.visibility = "hidden";
-  title.style.visibility = "hidden";
-  info.style.visibility = "hidden";
-  hint.style.visibility = "hidden";
+  startWrapper.style.display = "none";
   counter.style.visibility = "visible";
   zombiesKilled.style.visibility = "visible";
-  heart1.style.visibility = "visible";
-  heart2.style.visibility = "visible";
-  heart3.style.visibility = "visible";
+  hearthWrapper.style.visibility = "visible";
   ninja.style.visibility = "visible";
   zombieSpawn = true;
 });

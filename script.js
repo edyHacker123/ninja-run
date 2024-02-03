@@ -34,28 +34,28 @@ let hitDamage = 50;
 let heartsArray = [heart1, heart2, heart3];
 
 const run = [
-  "/images/run1.png",
-  "/images/run2.png",
-  "/images/run3.png",
-  "/images/run4.png",
-  "/images/run5.png",
-  "/images/run6.png",
-  "/images/run7.png",
-  "/images/run8.png",
-  "/images/run9.png",
-  "/images/run10.png",
+  "./images/run1.png",
+  "./images/run2.png",
+  "./images/run3.png",
+  "./images/run4.png",
+  "./images/run5.png",
+  "./images/run6.png",
+  "./images/run7.png",
+  "./images/run8.png",
+  "./images/run9.png",
+  "./images/run10.png",
 ];
 const runZombie = [
-  "/images/Walk1.png",
-  "/images/Walk2.png",
-  "/images/Walk3.png",
-  "/images/Walk4.png",
-  "/images/Walk5.png",
-  "/images/Walk6.png",
-  "/images/Walk7.png",
-  "/images/Walk8.png",
-  "/images/Walk9.png",
-  "/images/Walk10.png",
+  "./images/Walk1.png",
+  "./images/Walk2.png",
+  "./images/Walk3.png",
+  "./images/Walk4.png",
+  "./images/Walk5.png",
+  "./images/Walk6.png",
+  "./images/Walk7.png",
+  "./images/Walk8.png",
+  "./images/Walk9.png",
+  "./images/Walk10.png",
 ];
 
 setInterval(() => {
@@ -101,7 +101,7 @@ const createZombie = () => {
   progressBar.style.width = "100%";
   lifeBar.appendChild(progressBar);
   lifeBar.style.right = image.style.right;
-  image.src = "/images/Walk1.png";
+  image.src = "./images/Walk1.png";
   image.style.right = "-120px";
   image.classList.add("zombie");
   body.appendChild(image);
